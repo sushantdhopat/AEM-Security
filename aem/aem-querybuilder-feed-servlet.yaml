@@ -12,6 +12,11 @@ requests:
   - method: GET
     path:
       - '{{BaseURL}}/bin/querybuilder.feed'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.css'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.ico'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet;%0aa.css'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.1.json'
     matchers-condition: and
     matchers:
       - type: status
