@@ -11,6 +11,10 @@ requests:
   - method: GET
     path:
       - '{{BaseURL}}/.json'
+      - '{{BaseURL}}/var'
+      - '{{BaseURL}}/home'
+      - '{{BaseURL}}/etc'
+      - '{{BaseURL}}/apps/system/config'
       - '{{BaseURL}}/.1.json'
       - '{{BaseURL}}/....4.2.1....json'
       - '{{BaseURL}}/.json?FNZ.css'
