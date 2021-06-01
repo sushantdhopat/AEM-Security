@@ -1,0 +1,35 @@
+id: aem-gql-servlet
+
+info:
+  author: sushantdhopat
+  name: AEM GQLServlet
+  severity: low
+  reference: https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/index.html?org/apache/jackrabbit/commons/query/GQL.html
+  tags: aem
+
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/bin/wcm/search/gql.json?query=type:User%20limit:..1&pathPrefix=&p.ico'
+      - '{{BaseURL}}/bin/wcm/search/gql.servlet.json'
+      - '{{BaseURL}}///bin///wcm/search/gql.servlet.json
+      - '{{BaseURL}}///bin///wcm/search/gql.json'
+      - '{{BaseURL}}///bin///wcm/search/gql.json/a.1.json'
+      - '{{BaseURL}}///bin///wcm/search/gql.json;%0aa.css'
+      - '{{BaseURL}}///bin///wcm/search/gql.json/a.css'
+      - '{{BaseURL}}///bin///wcm/search/gql.json/a.ico'
+      - '{{BaseURL}}///bin///wcm/search/gql.json/a.png'
+      - '{{BaseURL}}///bin///wcm/search/gql.json/a.html'
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - 'excerpt'
+          - 'path'
+          - 'hits'
+        condition: and
