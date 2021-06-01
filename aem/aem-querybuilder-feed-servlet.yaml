@@ -18,6 +18,11 @@ requests:
       - '{{BaseURL}}/bin/querybuilder.feed.servlet;%0aa.css'
       - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.1.json'
       - '{{BaseURL}}/bin/querybuilder.feed.servlet;%0aa.css?type=nt:file&nodename=*.zip'
+      - '{{BaseURL}}/bin/querybuilder.feed?type=nt:file&nodename=*.zip'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet?type=nt:file&nodename=*.zip'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.css?type=nt:file&nodename=*.zip'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.ico?type=nt:file&nodename=*.zip'
+      - '{{BaseURL}}/bin/querybuilder.feed.servlet/a.1.json?type=nt:file&nodename=*.zip'
     matchers-condition: and
     matchers:
       - type: status
