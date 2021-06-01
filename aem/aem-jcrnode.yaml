@@ -1,0 +1,52 @@
+id: aem-default-get-servlet
+info:
+  author: sushantdhopat
+  name: AEM DefaultGetServlet
+  severity: low
+  reference: https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps?slide=43
+  tags: aem
+
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/.json'
+      - '{{BaseURL}}/.1.json'
+      - '{{BaseURL}}/.childrenlist.json'
+      - '{{BaseURL}}/.ext.json'
+      - '{{BaseURL}}/.4.2.1...json'
+      - '{{BaseURL}}/.json/a.css'
+      - '{{BaseURL}}/.json/a.html'
+      - '{{BaseURL}}/.json/a.png'
+      - '{{BaseURL}}/.json/a.ico'
+      - '{{BaseURL}}/.json;&0aa.css'
+      - '{{BaseURL}}/content.json'
+      - '{{BaseURL}}/content.1.json'
+      - '{{BaseURL}}/content.childrenlist.json'
+      - '{{BaseURL}}/content.ext.json'
+      - '{{BaseURL}}/content.4.2.1...json'
+      - '{{BaseURL}}/content.json/a.css'
+      - '{{BaseURL}}/content.json/a.html'
+      - '{{BaseURL}}/content.json/a.png'
+      - '{{BaseURL}}/content.json/a.ico'
+      - '{{BaseURL}}/content.json;%0aa.css'
+      - '{{BaseURL}}/bin.json'
+      - '{{BaseURL}}/bin.1.json'
+      - '{{BaseURL}}/bin.childrenlist.json'
+      - '{{BaseURL}}/bin.ext.json'
+      - '{{BaseURL}}/bin.4.2.1...json'
+      - '{{BaseURL}}/bin.json/a.css'
+      - '{{BaseURL}}/bin.json/a.html'
+      - '{{BaseURL}}/bin.json/a.png'
+      - '{{BaseURL}}/bin.json/a.ico'
+      - '{{BaseURL}}/bin.json;%0aa.css'
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - 'jcr:createdBy'
+        condition: and
