@@ -35,6 +35,28 @@ requests:
       - '{{BaseURL}}/bin/querybuilder.json.servlet.html'
       - '{{BaseURL}}/bin/querybuilder.json.servlet.ico'
       - '{{BaseURL}}/bin/querybuilder.json.servlet.png'
+      - '{{BaseURL}}/bin/querybuilder.json.css?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.1.json?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.css?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.ico?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json.html?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json.png?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.html?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.png?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json/a.ico?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.json;%0aa.css?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet.css?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet.html?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet.png?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet.ico?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet/a.ico?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet/a.css?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet/a.html?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet/a.png?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet.json/a.1.json?path=/home&p.hits=full&p.limit=-1'
+      - '{{BaseURL}}/bin/querybuilder.servlet;%0aa.css?path=/home&p.hits=full&p.limit=-1'
+     
     matchers-condition: and
     matchers:
       - type: status
