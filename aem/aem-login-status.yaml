@@ -12,12 +12,19 @@ requests:
   - method: GET
     path:
       - '{{BaseURL}}/system/sling/loginstatus.css'
+      - '{{BaseURL}}///system///sling/loginstatus.css'
       - '{{BaseURL}}/system/sling/loginstatus.json'
+      - '{{BaseURL}}///system///sling/loginstatus.json'
       - '{{BaseURL}}/system/sling/loginstatus.png'
+      - '{{BaseURL}}///system///sling/loginstatus.png'
       - '{{BaseURL}}/system/sling/loginstatus.gif'
+      - '{{BaseURL}}///system///sling/loginstatus.gif'
       - '{{BaseURL}}/system/sling/loginstatus.html'
+      - '{{BaseURL}}///system///sling/loginstatus.html'
       - '{{BaseURL}}/system/sling/loginstatus.json/a.1.json'
+      - '{{BaseURL}}///system///sling/loginstatus.json/a.1.json'
       - '{{BaseURL}}/system/sling/loginstatus.json;%0aa.css'
+      - '{{BaseURL}}///system///sling/loginstatus.json;%0aa.css'
     matchers-condition: and
     matchers:
       - type: status
