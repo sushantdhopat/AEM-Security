@@ -25,6 +25,23 @@ requests:
       - '{{BaseURL}}///system///sling/loginstatus.json/a.1.json'
       - '{{BaseURL}}/system/sling/loginstatus.json;%0aa.css'
       - '{{BaseURL}}///system///sling/loginstatus.json;%0aa.css'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.html'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.css'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.js'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.ico'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.png'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.gif'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1.1.json'
+      - '{{BaseURL}}/bin/receive{0}?sling:authRequestLogin=1...4.2.1...json'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.html'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.css'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.png'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.ico'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.gif'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1.1.json'
+      - '{{BaseURL}}/bin/receive.servlet{0}?sling:authRequestLogin=1...4.2.1...json'
     matchers-condition: and
     matchers:
       - type: status
