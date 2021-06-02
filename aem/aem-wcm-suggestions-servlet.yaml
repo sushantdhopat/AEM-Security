@@ -1,6 +1,6 @@
 id: aem-wcm-suggestions-servlet
 info:
-  author: DhiyaneshDk
+  author: sushantdhopat
   name: AEM WCM Suggestions Servlet
   severity: low
   reference: https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps?slide=96
@@ -11,6 +11,12 @@ requests:
   - method: GET
     path:
       - '{{BaseURL}}/bin/wcm/contentfinder/connector/suggestions.json;%0aOJh.css?query_term=path%3a/&pre={{randstr}}'
+      - '{{BaseURL}}/etc/clientlibs/wcm/foundation/main.css'
+      - '{{BaseURL}}/etc/clientlibs/social/connect.js'
+      - '{{BaseURL}}/etc/clientlibs/foundation/main.css'
+      - '{{BaseURL}}/etc/clientlibs/mobile/user.js'
+      - '{{BaseURL}}/etc/clientlibs/screens/player/bootloader/js/bootloader.js'
+      - '{{BaseURL}}/system/sling.js'
 
     matchers-condition: and
     matchers:
