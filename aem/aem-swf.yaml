@@ -1,0 +1,37 @@
+id: aem-bg-servlet
+
+info:
+  author: sushantdhopat
+  name: AEM BG-Servlets
+  severity: info
+  reference: https://www.slideshare.net/0ang3el/hunting-for-security-bugs-in-aem-webapps-129262212
+  tags: aem
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/etc/clientlibs/foundation/video/swf/player_flv_maxi.swf'
+      - '{{BaseURL}}/etc/clientlibs/foundation/video/swf/player_flv_maxi.swf.res'
+      - '{{BaseURL}}/etc/clientlibs/foundation/shared/endorsed/swf/slideshow.swf'
+      - '{{BaseURL}}/etc/clientlibs/foundation/shared/endorsed/swf/slideshow.swf.res'
+      - '{{BaseURL}}/etc/clientlibs/foundation/video/swf/StrobeMediaPlayback.swf'
+      - '{{BaseURL}}/etc/clientlibs/foundation/video/swf/StrobeMediaPlayback.swf.res'
+      - '{{BaseURL}}/libs/dam/widgets/resources/swfupload/swfupload_f9.swf'
+      - '{{BaseURL}}/libs/dam/widgets/resources/swfupload/swfupload_f9.swf.res'
+      - '{{BaseURL}}/libs/cq/ui/resources/swfupload/swfupload.swf'
+      - '{{BaseURL}}/libs/cq/ui/resources/swfupload/swfupload.swf.res'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/2.11/flash/VideoPlayer.swf'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/2.11/flash/VideoPlayer.swf.res'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/2.9/flash/VideoPlayer.swf'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/2.9/flash/VideoPlayer.swf.res'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/3.2/flash/VideoPlayer.swf'
+      - '{{BaseURL}}/etc/dam/viewers/s7sdk/3.2/flash/VideoPlayer.swf.res'
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - '<br/>Flushing output<br/>'
