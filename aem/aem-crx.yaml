@@ -1,0 +1,42 @@
+id: aem-bg-servlet
+
+info:
+  author: sushantdhopat
+  name: AEM BG-Servlets
+  severity: info
+  reference: https://www.slideshare.net/0ang3el/hunting-for-security-bugs-in-aem-webapps-129262212
+  tags: aem
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/crx/de/index.jsp'
+      - '{{BaseURL}}/crx/de/index.jsp/a.html'
+      - '{{BaseURL}}/crx/de/index.jsp/a.css'
+      - '{{BaseURL}}/crx/de/index.jsp/a.png'
+      - '{{BaseURL}}/crx/de/index.jsp/a.ico'
+      - '{{BaseURL}}/crx/de/index.jsp/a.js'
+      - '{{BaseURL}}/crx/de/index.jsp;%0aa.html'
+      - '{{BaseURL}}/crx/de/index.jsp;%0aa.css'
+      - '{{BaseURL}}/crx/de/index.jsp;%0aa.png'
+      - '{{BaseURL}}/crx/de/index.jsp;%0aa.ico'
+      - '{{BaseURL}}/crx/packmgr/index.jsp'
+      - '{{BaseURL}}/crx/packmgr/index.jsp/a.html'
+      - '{{BaseURL}}/crx/packmgr/index.jsp/a.css'
+      - '{{BaseURL}}/crx/packmgr/index.jsp/a.png'
+      - '{{BaseURL}}/crx/packmgr/index.jsp/a.ico'
+      - '{{BaseURL}}/crx/packmgr/index.jsp/a.js'
+      - '{{BaseURL}}/crx/packmgr/index.jsp;%0aa.html'
+      - '{{BaseURL}}/crx/packmgr/index.jsp;%0aa.css'
+      - '{{BaseURL}}/crx/packmgr/index.jsp;%0aa.png'
+      - '{{BaseURL}}/crx/packmgr/index.jsp;%0aa.ico'
+      
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - '<br/>Flushing output<br/>'
