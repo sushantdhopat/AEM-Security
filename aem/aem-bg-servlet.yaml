@@ -11,12 +11,27 @@ requests:
   - method: GET
     path:
       - '{{BaseURL}}/system/bgservlets/test.css'
+      - '{{BaseURL}}/system/bgservlets/test'
+      -'{{BaseURL}}///system///bgservlets///test'
+      - '{{BaseURL}}///system///bgservlets///test.css'
       - '{{BaseURL}}/system/bgservlets/test.json'
+      - '{{BaseURL}}///system///bgservlets///test.json'
       - '{{BaseURL}}/system/bgservlets/test.png'
+      - '{{BaseURL}}///system///bgservlets///test.png'
       - '{{BaseURL}}/system/bgservlets/test.gif'
+      - '{{BaseURL}}///system///bgservlets///test.gif'
       - '{{BaseURL}}/system/bgservlets/test.html'
+      - '{{BaseURL}}///system///bgservlets///test.html'
       - '{{BaseURL}}/system/bgservlets/test.json/a.1.json'
+      - '{{BaseURL}}///system///bgservlets///test.json/a.1.json'
       - '{{BaseURL}}/system/bgservlets/test.json;%0aa.css'
+      - '{{BaseURL}}///system///bgservlets///test.json;%0aa.css'
+      - '{{BaseURL}}/system/bgservlets/test.json;%0aa.html'
+      - '{{BaseURL}}///system///bgservlets///test.json;%0aa.html'
+      - '{{BaseURL}}/system/bgservlets/test.json;%0aa.png'
+      - '{{BaseURL}}///system///bgservlets///test.json;%0aa.png'
+      - '{{BaseURL}}/system/bgservlets/test.json;%0aa.ico'
+      - '{{BaseURL}}///system///bgservlets///test.json;%0aa.ico'
 
     matchers-condition: and
     matchers:
