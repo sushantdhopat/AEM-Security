@@ -4,7 +4,7 @@ Automation tool by 0ang3el
 
 https://github.com/0ang3el/aem-hacker
 
-##Resources :-
+## Resources :-
 
 * https://github.com/0ang3el/aem-hacker
 * https://www.slideshare.net/0ang3el/hacking-aem-sites
@@ -15,11 +15,3 @@ https://github.com/0ang3el/aem-hacker
 * https://medium.com/@byq/how-to-get-rce-on-aem-instance-without-java-knowledge-a995ceab0a83
 * http://www.kernelpicnic.net/2016/07/24/Microsoft-signout.live.com-Remote-Code-Execution-Write-Up.html
 * https://medium.com/@jonathanbouman/reflected-xss-at-philips-com-e48bf8f9cd3c
-
-
-##CVES:-
-
-CVE-2021-21087
-
-Adobe Coldfusion versions 2016 (update 16 and earlier), 2018 (update 10 and earlier) and 2021.0.0.323925 are affected by an Improper Neutralization of Directives in Dynamically Evaluated Code (‘Eval Injection’) vulnerability. An attacker could abuse this vulnerability to achieve arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction. 
-
