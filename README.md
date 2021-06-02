@@ -4,7 +4,7 @@ Automation tool by 0ang3el
 
 https://github.com/0ang3el/aem-hacker
 
-Resources 👎
+Resources :-
 
 * https://github.com/0ang3el/aem-hacker
 * https://www.slideshare.net/0ang3el/hacking-aem-sites
