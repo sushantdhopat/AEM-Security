@@ -40,6 +40,23 @@ requests:
       - '{{BaseURL}}/bin.json/a.png'
       - '{{BaseURL}}/bin.json/a.ico'
       - '{{BaseURL}}/bin.json;%0aa.css'
+      - '{{BaseURL}}/api/content.json'
+      - '{{BaseURL}}/api/content.json.css'
+      - '{{BaseURL}}/api/content.json.js'
+      - '{{BaseURL}}/api/content.json.ico'
+      - '{{BaseURL}}/api/content.json.png'
+      - '{{BaseURL}}/api/content.json/test.css'
+      - '{{BaseURL}}/api/content.json/test.html'
+      - '{{BaseURL}}/api/content.json/test.ico'
+      - '{{BaseURL}}/api/content.json/test.1.json'
+      - '{{BaseURL}}/api/content.json/test...4.2.1...json'
+      - '{{BaseURL}}/api/content.json;%0aa.css'
+      - '{{BaseURL}}/api/content.json;%0aa.html'
+      - '{{BaseURL}}/api/content.json;%0aa.ico'
+      - '{{BaseURL}}/api/content.json?a.css'
+      - '{{BaseURL}}/api/content.json?a.html'
+      - '{{BaseURL}}/api/content.json?a.ico'
+      
     matchers-condition: and
     matchers:
       - type: status
