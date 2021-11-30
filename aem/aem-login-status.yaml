@@ -1,7 +1,6 @@
 id: aem-login-status
 
 info:
-  author: sushantdhopat
   name: AEM Login Status
   severity: info
   reference: https://www.slideshare.net/0ang3el/hunting-for-security-bugs-in-aem-webapps-129262212
