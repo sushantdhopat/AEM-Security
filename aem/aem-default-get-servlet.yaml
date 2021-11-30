@@ -1,6 +1,5 @@
 id: aem-default-get-servlet
 info:
-  author: sushantdhopat
   name: AEM DefaultGetServlet
   severity: low
   reference: https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps?slide=43
