@@ -1,7 +1,6 @@
 id: aem-querybuilder-json-servlet
 
 info:
-  author: sushantdhopat
   name: AEM QueryBuilder Json Servlet
   severity: info
   reference: https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-predicate-reference.html
