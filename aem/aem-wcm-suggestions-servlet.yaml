@@ -1,6 +1,5 @@
 id: aem-wcm-suggestions-servlet
 info:
-  author: sushantdhopat
   name: AEM WCM Suggestions Servlet
   severity: low
   reference: https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps?slide=96
